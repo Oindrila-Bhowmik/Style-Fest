@@ -1,0 +1,495 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.chal {
+    width: 100%;
+    height: 40px;
+    background: #ffffff84;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    margin: 0 auto;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(63, 62, 62);
+    font-size: 13px;
+}
+
+.search-bar {
+    width: 350px;
+    line-height: 40px;
+    border-radius: 4px;
+    background: #f0eeee;
+}
+
+.search-bar input {
+    background: transparent;
+    border: 0;
+    outline: none;
+    width: 85%;
+    font-size: 12px;
+}
+
+.nav-right .search-bar i {
+    font-size: 13px;
+    color: #8d8b8b;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.studio {
+    position: relative;
+}
+
+.studio span {
+    position: absolute;
+    color: rgb(238, 9, 47);
+    top: -5px;
+    left: 55px;
+    font-size: 11px;
+}
+
+.nav-right div {
+    margin: 0 12px;
+    text-align: center;
+}
+
+.nav-right div p {
+    font-size: 12px;
+    font-weight: 700;
+    color: #535252;
+}
+
+.nav-right div i {
+    font-size: 18px;
+    color: #535252;
+}
+
+.nav-left i {
+    font-size: 20px;
+    background-color: #f1efef;
+    padding: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.challenge {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(185, 107, 209);
+}
+
+.challenge a {
+    text-decoration: none;
+    color: black;
+}
+
+.chal-image {
+    background-image: url(everymyn.jpeg);
+    height: 800px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-image {
+    background-image: url(heromyn.jpg);
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-message {
+    margin-top: 100px;
+    font-size: 30px;
+    color: #3e4152;
+    margin-left: 30px;
+}
+
+/* Contest Section Styles */
+.contests-section {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+}
+
+.contests-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3e4152;
+}
+
+.contests-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide into three equal parts */
+    gap: 20px; /* Adjust the gap between cards */
+    justify-content: center;
+    max-width: 1200px; /* Set a maximum width if needed */
+    margin: 0 auto; /* Center align */
+}
+
+.contest-card {
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contest-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.contest-info {
+    padding: 20px;
+}
+
+.contest-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contest-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contest-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contest-info form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contest-info form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contest-info form button {
+    padding: 10px 20px;
+    background-color: #ff3f6c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contest-info form button:hover {
+    background-color: #e32e57;
+}
+
+@media (max-width: 768px) {
+    .contests-wrapper {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+}
+
+/* Rate Items Section Styles */
+.rate-section {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+}
+
+.rate-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3e4152;
+}
+
+.rate-section h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #2e303e;
+}
+
+.rate-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rate-card {
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.rate-card img,
+.rate-card video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.rate-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.rate-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.rate-info button {
+    padding: 10px 20px;
+    background-color: #ff3f6c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.rate-info button:hover {
+    background-color: #e32e57;
+}
+
+.like-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.like-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.liked {
+    color: #ff3f6c;
+}
+
+@media (max-width: 768px) {
+    .contests-wrapper,
+    .rate-wrapper {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+}
+
+
+/* Rewards Section Styles */
+/* Rewards Section Styles */
+.rewards-section {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+}
+
+.rewards-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3e4152;
+}
+
+.reward-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display cards in a 3-column grid */
+    gap: 20px; /* Adjust the gap between cards */
+    justify-content: center;
+    max-width: 1200px; /* Set a maximum width if needed */
+    margin: 0 auto; /* Center align */
+}
+
+.reward-card {
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reward-icon {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.reward-icon i {
+    font-size: 36px;
+    color: #333;
+}
+
+.reward-details {
+    padding: 20px;
+}
+
+.reward-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.reward-details p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .reward-cards-wrapper {
+        grid-template-columns: 1fr; /* Display cards in a single column on smaller screens */
+    }
+}
+
+
+/* Winners Section Styles */
+.winners-section {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+}
+
+.winners-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3e4152;
+}
+
+.winners-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.winner-card {
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.winner-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 400px;
+}
+
+.winner-card h3 {
+    font-size: 24px;
+    color: #3e4152;
+    margin-bottom: 10px;
+}
+
+.winner-card p {
+    font-size: 16px;
+    color: #7a7a7a;
+    margin-bottom: 15px;
+}
+
+.winner-card .social-links a {
+    font-size: 18px;
+    color: #3e4152;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.winner-card .social-links a:hover {
+    color: #007bff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-left ul {
+        display: none;
+    }
+    .nav-left i {
+        display: block;
+    }
+    .nav-right {
+        display: none;
+    }
+    .winners-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Fest</title>
+    <link rel="stylesheet" href="mynstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="mynscript.js" defer></script>  
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="#"><img src="https://www.freelogovectors.net/wp-content/uploads/2023/01/myntra-logo-freelogovectors.net_.png" alt="Myntra Logo"></a>
+                <ul class="nav-menu">
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">HOME & LIVING</a></li>
+                    <li><a href="#">BEAUTY</a></li>
+                    <li class="studio"><a href="#">STUDIO <span>New</span></a></li>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for products, brands and more" aria-label="Search">
+                </div>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <p>Profile</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>Wishlist</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <p>Bag</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chal nav-left">
+        <ul class="nav-menu">
+            <li><a href="#contests">Contests</a></li>
+            <li><a href="#rate">Rate Items</a></li>
+            <li><a href="#rewards">Rewards</a></li>
+            <li><a href="#winners">Winners</a></li>
+        </ul>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="chal-image"></div>
+
+    <section id="contests" class="contests-section">
+        <h2>CONTESTS</h2>
+        <div class="contests-wrapper">
+            <div class="contest-card">
+                <img src="https://media.istockphoto.com/id/1028434976/photo/my-favorite-song-is-on.jpg?s=2048x2048&w=is&k=20&c=W2vXDoYdulL0dkaybWDLtavVk6nDIDCrGbaQsehZEMo=" alt="Present Week Theme">
+                <div class="contest-info">
+                    <h3>This Week: Summer Vibes</h3>
+                    <p>Submission Dates: July 15 - July 21</p>
+                    <form action="submit_entry" method="post" enctype="multipart/form-data">
+                        <label for="present-photo">Submit Photo:</label>
+                        <input type="file" id="present-photo" name="present-photo" accept="image/*" required>
+                        <label for="present-video">Submit Video:</label>
+                        <input type="file" id="present-video" name="present-video" accept="video/*" required>
+                        <button type="submit">Submit Entry</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contest-card">
+                <img src="https://media.istockphoto.com/id/1068416752/photo/group-of-friends-holding-glasses-of-champagne-and-looking-at-camera-during-party.jpg?s=2048x2048&w=is&k=20&c=KMs1hjSC7gA397IwFKCmi5p8nMv0OtBvqPUCRDDnPQw=" alt="Upcoming Week Theme">
+                <div class="contest-info">
+                    <h3>Upcoming Week: Party Glitz</h3>
+                    <p>Submission Dates: July 22 - July 28</p>
+                    <form action="submit_entry" method="post" enctype="multipart/form-data">
+                        <label for="upcoming-photo">Submit Photo:</label>
+                        <input type="file" id="upcoming-photo" name="upcoming-photo" accept="image/*" required>
+                        <label for="upcoming-video">Submit Video:</label>
+                        <input type="file" id="upcoming-video" name="upcoming-video" accept="video/*" required>
+                        <button type="submit">Submit Entry</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contest-card">
+                <img src="https://media.istockphoto.com/id/665231228/photo/summer-fun.jpg?s=2048x2048&w=is&k=20&c=kKNMMSB2e8nyWAvVQsHi53uDddou59U_zg3Flzg5obM=" alt="Previous Week Theme">
+                <div class="contest-info">
+                    <h3>Previous Week: Beach Bliss</h3>
+                    <p>Submission Dates: July 8 - July 14</p>
+                    <form action="submit_entry" method="post" enctype="multipart/form-data">
+                        <label for="previous-photo">Submit Photo:</label>
+                        <input type="file" id="previous-photo" name="previous-photo" accept="image/*" required>
+                        <label for="previous-video">Submit Video:</label>
+                        <input type="file" id="previous-video" name="previous-video" accept="video/*" required>
+                        <button type="submit">Submit Entry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rate Items Section -->
+    <section id="rate" class="rate-section">
+        <h2>RATE ITEMS</h2>
+        <h3>Photos</h3>
+
+        <div class="rate-wrapper">  
+            <!-- Photos Section --> 
+            <div class="rate-card">
+                <img src="https://www.shutterstock.com/image-photo/fashionable-man-shirt-sunglasses-summer-260nw-650092912.jpg" alt="Photo 1">
+                <button class="like-btn" onclick="toggleLike(this)"><i class="fa fa-heart"></i></button>
+                <div class="rate-info">
+                    <h3>Summer Boy</h3>
+                    <button onclick="vote(this)">Vote</button>
+                </div>
+            </div>
+            <div class="rate-card">
+                <img src="https://www.shutterstock.com/image-photo/fulllength-portrait-refined-european-girl-260nw-763894849.jpg" alt="Photo 2">
+                <button class="like-btn" onclick="toggleLike(this)"><i class="fa fa-heart"></i></button>
+                <div class="rate-info">
+                    <h3>Party Girl</h3>
+                    <button onclick="vote(this)">Vote</button>
+                </div>
+            </div>
+            <div class="rate-card">
+                <img src="https://rollingstoneindia.com/wp-content/uploads/2020/10/Veronica-Fusaro-by-Nils-Sandmeier-.jpeg" alt="Photo 3">
+                <button class="like-btn" onclick="toggleLike(this)"><i class="fa fa-heart"></i></button>
+                <div class="rate-info">
+                    <h3>Beach Glow</h3>
+                    <button onclick="vote(this)">Vote</button>
+                </div>
+            </div>
+        </div>
+        <br>
+            <h3>Videos</h3>
+            <!-- Videos Section -->
+        <div class="rate-wrapper">     
+            <div class="rate-card">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/q60fnNZLmX0?si=YewVbERZiWlZ_62W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button class="like-btn" onclick="toggleLike(this)"><i class="fa fa-heart"></i></button>
+                <div class="rate-info">
+                    <h3>Classy Summer Outfits</h3>
+                    <button onclick="vote(this)">Vote</button>
+                </div>
+            </div>
+            <div class="rate-card">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/-bkebCjW4jE?si=KAw4NQiks7aIPTFE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button class="like-btn" onclick="toggleLike(this)"><i class="fa fa-heart"></i></button>
+                <div class="rate-info">
+                    <h3>Cozy Winter Outfits</h3>
+                    <button onclick="vote(this)">Vote</button>
+                </div>
+            </div>
+            <div class="rate-card">
+                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/5FuUrDmbjBE?si=FVaF9RNgqWiuUDh3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <button class="like-btn" onclick="toggleLike(this)"><i class="fa fa-heart"></i></button>
+                <div class="rate-info">
+                    <h3>Cool Spring Outfits</h3>
+                    <button onclick="vote(this)">Vote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section id="rewards" class="rewards-section">
+        <h2>REWARDS</h2>
+        <div class="reward-cards-wrapper">
+            <div class="reward-card">
+                <div class="reward-icon">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="reward-details">
+                    <h3>Gift Cards</h3>
+                    <p>Gift cards to popular fashion retailers or e-commerce platforms.</p>
+                    <p>Allows winners to choose what they want to buy.</p>
+               </div>
+            </div>
+            <div class="reward-card">
+                <div class="reward-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div class="reward-details">
+                    <h3>Exclusive Discounts</h3>
+                    <p>Winners receive exclusive discounts or vouchers.</p>
+                    <p>Encourages further shopping and brand loyalty.</p>
+                </div>
+            </div>
+            <div class="reward-card">
+                <div class="reward-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="reward-details">
+                    <h3>Feature in Promotional Content</h3>
+                    <p>Winners are featured in promotional content.</p>
+                    <p>Provides recognition and exposure.</p>
+                </div>
+            </div>
+            <div class="reward-card">
+                <div class="reward-icon">
+                    <i class="fas fa-tshirt"></i>
+                </div>
+                <div class="reward-details">
+                    <h3>Fashion Items</h3>
+                    <p>Provide trendy fashion items as rewards.</p>
+                    <p>Partner with fashion brands for rewards.</p>
+                </div>
+            </div>
+            <div class="reward-card">
+                <div class="reward-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="reward-details">
+                    <h3>Custom Merchandise</h3>
+                    <p>Custom merchandise like personalized fashion items.</p>
+                    <p>Makes the reward special and memorable.</p>
+                </div>
+            </div>
+            <div class="reward-card">
+                <div class="reward-icon">
+                    <i class="fas fa-coins"></i>
+                </div>
+                <div class="reward-details">
+                    <h3>Points or Credits</h3>
+                    <p>Winners earn points or credits for future use.</p>
+                    <p>Encourages continued participation and engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+
+     <!-- Winners Section -->
+     <section id="winners" class="winners-section">
+        <h2>WINNERS</h2>
+        <div class="winners-wrapper">
+            <div class="winner-card">
+                <img src="https://cdn.openart.ai/uploads/image_9ojrLsl2_1693485580251_512.webp" alt="1st Runner Up">
+                <h3>1st Runner Up</h3>
+                <p>@first_runnerup</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="winner-card">
+                <img src="https://miro.medium.com/v2/resize:fit:990/0*z7mjwb47Ibj6LgGm.jpeg" alt="Winner">
+                <h3>Winner</h3>
+                <p>@winner</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="winner-card">
+                <img src="https://img.freepik.com/free-photo/beautiful-girl-stands-near-walll-with-leaves_8353-5377.jpg" alt="2nd Runner Up">
+                <h3>2nd Runner Up</h3>
+                <p>@second_runnerup</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
